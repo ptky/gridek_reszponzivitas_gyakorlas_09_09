@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: beige;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 10px;
+    color: white;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+nav li {
+    list-style: none;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.kartya {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    border: 2px solid rgb(0, 248, 165);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.kartya ul {
+    padding: 0;
+}
+
+.kartya li {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+
+.kartya-felso-szoveg {
+    font-weight: bolder;
+}
+
+.kartya-legnagyobb-szoveg {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.narancs-szoveg {
+    font-weight: bold;
+    color: rgb(10, 95, 67);
+
+}
+
+.active {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+footer {
+    color: white;
+}
+
+
+@media screen and (max-width: 850px) {
+    body {
+        max-width: 700px;
+    }
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (max-width:400px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
